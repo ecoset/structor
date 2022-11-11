@@ -6,7 +6,7 @@ const readFile = (directory, nameFile) => {
     fs.readFile(file, 'utf8', (err, data) => {
         if(err) throw new Error(err)
         console.log(`Successfully: File "${directory}${nameFile}" file read`)
-        console.log(data)
+        return data;
     })
 }
 
